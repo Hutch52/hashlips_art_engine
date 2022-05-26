@@ -2,15 +2,15 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const network = NETWORK.solanaMetadata;
+const network = NETWORK.sol;
 
 // General metadata for Ethereum
 const namePrefix = "Xth Street Terriers";
 const description = "TENTH HYPE";
-const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "ipfs://QmTknVavzLG1XbvfGjCoG461qswQCyxMRQaGxgjH3vTfbm";
 
 const solanaMetadata = {
-  symbol: "",
+  symbol: "XTH",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://xthstreet.com",
   creators: [
@@ -24,20 +24,20 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 5000,
     layersOrder: [
-      { name: "Background" , {
+      { name: "Background" ,
         options: {
-          bypassDNA: true;
+          bypassDNA: true,
         }
-      }},
+      },
       { name: "Fur" },
       { name: "Clothes" },
-      { name: "Mouth" , {
+      { name: "Mouth" ,
         options: {
-          bypassDNA: true;
+          byspassDNA: true,
         }
-      }},
+      }, 
       { name: "Head" },
       { name: "Eyes" },
     ],
