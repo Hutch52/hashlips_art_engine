@@ -10,7 +10,7 @@ const description = "TENTH HYPE";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://xthstreet.com",
   creators: [
@@ -24,14 +24,22 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 20,
     layersOrder: [
-      { name: "Background" },
+      { name: "Background" , {
+        options: {
+          bypassDNA: true;
+        }
+      }},
       { name: "Fur" },
-      { name: "Eyes" },
-      { name: "Head" },
       { name: "Clothes" },
-      { name: "Mouth" },
+      { name: "Mouth" , {
+        options: {
+          bypassDNA: true;
+        }
+      }},
+      { name: "Head" },
+      { name: "Eyes" },
     ],
   },
 ];
@@ -41,8 +49,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 124,
-  height: 124,
+  width: 2000,
+  height: 2000,
   smoothing: false,
 };
 
