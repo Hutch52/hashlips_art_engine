@@ -7,7 +7,7 @@ const network = NETWORK.sol;
 // General metadata for Ethereum
 const namePrefix = "Xth Street Terriers";
 const description = "TENTH HYPE";
-const baseUri = "ipfs://QmeiN4o35qAZbzP8UiMn6bTmgr2KuCsFKsoXzUX7dp3jKu";
+const baseUri = "ipfs://QmeiN4o35qAZbzP8UiMn6bTmgr2KuCsFKsoXzUX7dp3jKu.";
 
 const solanaMetadata = {
   symbol: "XTH",
