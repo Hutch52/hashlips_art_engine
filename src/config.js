@@ -7,7 +7,7 @@ const network = NETWORK.sol;
 // General metadata for Ethereum
 const namePrefix = "Xth Street Terriers";
 const description = "TENTH HYPE";
-const baseUri = "ipfs://QmdzthXfrRwWxEVdin8hUowp6xSgU6ccdmhGjWa7kTg4nv";
+const baseUri = "ipfs://QmUEdPCBXqBF1nscX6vkMNTYkCbsYZBT5k8ff3D9ktGp76";
 
 const solanaMetadata = {
   symbol: "XTH",
@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 5000,
     layersOrder: [
       { name: "Background" ,
         options: {
